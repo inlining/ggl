@@ -24,6 +24,21 @@ Labels for these inputs are used the same way as paragraphs. Add `"` to the end 
 Dialogues (for now) only include message boxes. A message box can be created with `mContent of Message Box"`.
 ### Running code
 You can add python code by adding any required snippets after a `^`. Anything after will be interpreted as python, and you can not resume normal ggl use.
+
+In the future, it would be nice to implement Pyth usage, so you can golf your software even further.
+### Positioning
+Not much (as of now) can be done with positioning. Centering can be achieved by wrapping the desired items to be centered with `<` and `>`.
+To insert a vertical space, use `v`. There are no arguments for `v`.
+### Functionality
+Changing another elements text requires a little bit of thinking. Say you have a program like this:
+`pClick the button below to change my text!"vbClick me!"`,
+and you want to change `p`'s text when you click it.
+
+The way you can do this is by adding an ID to p. This can be done by using a hashtag and then a 1 digit number after `p`:
+`p#5Click the button below to change my text!"vbClick me!"`;
+This specifies that `p` has the id of `5`. Now, in python code, you can set the text by adding this code to the button:
+`_5='I changed my text!`.
+Currently, only `p`s can have IDs, and you can only change their text.
 ## Example Programs
 All of these challenges were posted before the creation of this language, so they are technically invalid.
 
