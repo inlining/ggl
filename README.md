@@ -6,7 +6,7 @@ Simply download the main python script. Requires Python 3.
 Run the script with `python main.py script.txt`. The file extension for the script does not matter.
 ## Language Documentation
 ### Creating a window
-Creating a window is implicit. However, in order to change the size of the window, you will need to begin your program with `w800,600`. You can, of course, swap out `800,600` with whatever size you need. If you want to change the title, you will need to start with a capital `W` and follow with your title, then end with a closing `"`. (eg. `WAmazing Program"` will make the title `Amazing Program`). As of now, there is no way to use both.
+Creating a window is implicit. However, in order to change the size of the window, you will need to begin your program with `w800,600"`. You can, of course, swap out `800,600` with whatever size you need. If you want to change the title, you will need to start with a capital `W` and follow with your title, then end with a closing `"`. (eg. `WAmazing Program"` will make the title `Amazing Program`). As of now, there is no way to use both.
 ### Text
 There are several types of text. The main one, a paragraph, and be achieved like so:
 
